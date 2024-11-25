@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <nav class="flex flex-row bg-black gap-8 justify-center text-white p-4">
+        
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Aliexpress_logo.svg/2560px-Aliexpress_logo.svg.png" 
+            alt="Logo" class="rounded w-1/6">
+        <input type="text" placeholder="Search" class="w-80 h-10 rounded-md border p-3">
+        <p class="flex items-center gap-2">
+            <img src="./img/pngwing.com (6).png" alt="App Icon" width="30">
+            Download App
+        </p>
+        <p class="flex items-center gap-2">
+            <img src="./img/pngwing.com (3).png" alt="Language Icon" width="30">
+            En/Ngn
+        </p>
+        <p class="flex items-center gap-2">
+            <img src="./img/pngwing.com (4).png" alt="Cart Icon" width="30">
+            Cart:
+        </p>
+        <p class="total-cart-value text-lg font-semibold mt-2">Total: N0</p>
+             
+    </nav>
+    <div class="p-5 bg-white shadow rounded mt-6 mx-auto w-1/4">
+        <h2 class="text-xl font-bold mb-3">Cart</h2>
+        <div class="cart-summary space-y-2"></div>
+        
+    </div>
+    
+    <div class="p-5 grid grid-cols-4 gap-6">
+        
+        <div class="border p-4 rounded shadow bg-white">
+            <img src="https://plus.unsplash.com/premium_photo-1682125779534-76c5debea767?q=80&w=1662&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                alt="Product Image" class="mb-3 w-full h-48 object-cover rounded">
+            <p class="mb-2 text-gray-800">Product 1</p>
+            <p class="mb-3 text-gray-600">star: <span class="font-bold">10000</span></p>
+            <button class="add-to-cart border border-black text-red-500 w-full hover:bg-red-500 hover:text-white py-2 rounded transition-all duration-300">
+                Add to Cart
+            </button>
+        </div>
+        <div class="border p-4 rounded shadow bg-white">
+            <img src="https://images.unsplash.com/photo-1642444616393-df04dcb1492c?q=80&w=1607&auto=format" 
+                alt="Product Image" class="mb-3 w-full h-48 object-cover rounded">
+            <p class="mb-2 text-gray-800">star</p>
+            <p class="mb-3 text-gray-600">Price: <span class="font-bold">60000</span></p>
+            <button class="add-to-cart border border-black text-red-500 w-full hover:bg-red-500 hover:text-white py-2 rounded transition-all duration-300">
+                Add to Cart
+            </button>
+        </div>
+        <div class="border p-4 rounded shadow bg-white">
+            <img src="https://images.unsplash.com/photo-1609709295948-17d77cb2a69b?q=80&w=1588&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                alt="Product Image" class="mb-3 w-full h-48 object-cover rounded">
+            <p class="mb-2 text-gray-800">game</p>
+            <p class="mb-3 text-gray-600">Price: <span class="font-bold">40000</span></p>
+            <button class="add-to-cart border border-black text-red-500 w-full hover:bg-red-500 hover:text-white py-2 rounded transition-all duration-300">
+                Add to Cart
+            </button>
+        </div>
+        <div class="border p-4 rounded shadow bg-white">
+            <img src="https://images.unsplash.com/photo-1642444616393-df04dcb1492c?q=80&w=1607&auto=format" 
+                alt="Product Image" class="mb-3 w-full h-48 object-cover rounded">
+            <p class="mb-2 text-gray-800">Flame</p>
+            <p class="mb-3 text-gray-600">Price: <span class="font-bold">10000</span></p>
+            <button class="add-to-cart border border-black text-red-500 w-full hover:bg-red-500 hover:text-white py-2 rounded transition-all duration-300">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+
+    <!-- Cart Summary Section -->
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
